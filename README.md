@@ -2,6 +2,13 @@
 
 This project provides a simple, mobile-friendly web-based plan to help manage **Stage 1 Hypertension** through daily habits focused on nutrition, movement, and stress relief.
 
+## 🛒 Get the 3-Day BP Reset Plan
+
+Take control of Stage 1 Hypertension with this simple, printable plan:
+👉 [Buy the 3-Day BP Reset Plan – £5](https://moultonian1.gumroad.com/l/3DayBPResetPlan)
+A practical, beginner-friendly guide to food, movement, and mindfulness.
+
+
 ## 🔗 Live Demo
 
 Click below to open the interactive plan in your browser (works on mobile too):
