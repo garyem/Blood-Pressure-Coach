@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weekly BP Plan</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f4f8;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      color: #4CAF50;
+      font-size: 1.8rem;
+    }
+    .hero {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+    }
+    .hero img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+    }
+    .intro {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 20px auto;
+      font-size: 1rem;
+    }
+    .accordion {
+      background-color: #FF7043;
+      color: white;
+      cursor: pointer;
+      padding: 15px 20px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 1rem;
+      transition: 0.3s;
+      border-radius: 8px;
+      margin: 10px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .accordion::after {
+      content: "▼";
+      font-size: 1rem;
+      transition: transform 0.3s ease;
+    }
+    .accordion.active::after {
+      content: "▲";
+    }
+    .panel {
+      padding: 0 15px;
+      display: none;
+      background-color: white;
+      overflow: hidden;
+      border-radius: 0 0 8px 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      margin-bottom: 10px;
+    }
+    .panel p {
+      padding: 10px 0;
+      border-bottom: 1px solid #eee;
+    }
+    .panel p:last-child {
+      border-bottom: none;
+    }
+    .label {
+      font-weight: bold;
+      color: #333;
+    }
+    .download-btn {
+      display: inline-block;
+      padding: 12px 20px;
+      background-color: #4CAF50;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+      margin: 20px auto;
+      text-align: center;
+    }
+    .download-btn:hover {
+      background-color: #388E3C;
+    }
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+      .accordion {
+        font-size: 0.95rem;
+        padding: 12px 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Weekly Plan to Lower Stage 1 Hypertension</h1>
+
+  <div class="hero">
+    <img src="https://tse3.mm.bing.net/th?id=OIP.PjhVRaiy9__H6l5BBR10kgHaHa&pid=Api" alt="Blood Pressure Illustration">
+  </div>
+
+  <div class="intro">
+    <p>This weekly plan helps manage Stage 1 hypertension through small, daily actions in diet, movement, and stress control.</p>
+    <p>Click each day below to reveal your personalized tips and tasks!</p>
+  </div>
+
+  <div style="text-align: center;">
+    <a href="bp-plan.pdf" download class="download-btn">📄 Download this Plan as PDF</a>
+  </div>
+
+  <button class="accordion">Monday</button>
+  <div class="panel">
+    <p><span class="label">Nutrition:</span> Add 1 cup of leafy greens to lunch or dinner.</p>
+    <p><span class="label">Movement:</span> 10-minute brisk walk after each meal.</p>
+    <p><span class="label">Stress:</span> 5 minutes of deep breathing before bed.</p>
+  </div>
+
+  <button class="accordion">Tuesday</button>
+  <div class="panel">
+    <p><span class="label">Nutrition:</span> Drink only water or herbal tea. Avoid soda.</p>
+    <p><span class="label">Movement:</span> 20-minute walk or beginner home workout.</p>
+    <p><span class="label">Stress:</span> Write down 3 things you're grateful for.</p>
+  </div>
+
+  <button class="accordion">Wednesday</button>
+  <div class="panel">
+    <p><span class="label">Nutrition:</span> Go low-sodium: avoid packaged or salty snacks.</p>
+    <p><span class="label">Movement:</span> Light stretching for 10 minutes.</p>
+    <p><span class="label">Stress:</span> Try a guided meditation.</p>
+  </div>
+
+  <button class="accordion">Thursday</button>
+  <div class="panel">
+    <p><span class="label">Nutrition:</span> Swap red meat for fish, beans, or lentils.</p>
+    <p><span class="label">Movement:</span> 30-minute walk (can split into two).</p>
+    <p><span class="label">Stress:</span> Call or text a friend.</p>
+  </div>
+
+  <button class="accordion">Friday</button>
+  <div class="panel">
+    <p><span class="label">Nutrition:</span> Add potassium-rich food: banana, sweet potato, avocado.</p>
+    <p><span class="label">Movement:</span> Do something active you enjoy for 20 minutes.</p>
+    <p><span class="label">Stress:</span> Unplug from screens 1 hour before bed.</p>
+  </div>
+
+  <button class="accordion">Saturday</button>
+  <div class="panel">
+    <p><span class="label">Nutrition:</span> Cook a DASH-style recipe rich in veggies.</p>
+    <p><span class="label">Movement:</span> Nature walk or bike ride.</p>
+    <p><span class="label">Stress:</span> Stretch or do yoga for 10 minutes.</p>
+  </div>
+
+  <button class="accordion">Sunday</button>
+  <div class="panel">
+    <p><span class="label">Nutrition:</span> Prep healthy meals/snacks for the week.</p>
+    <p><span class="label">Movement:</span> Light walk or recovery stretch.</p>
+    <p><span class="label">Stress:</span> Reflect on the week.</p>
+  </div>
+
+  <script>
+    const acc = document.getElementsByClassName("accordion");
+    for (let i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        const panel = this.nextElementSibling;
+        panel.style.display = (panel.style.display === "block") ? "none" : "block";
+      });
+    }
+  </script>
+
+</body>
+</html>
